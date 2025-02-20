@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="php.php" method="post">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">Registration Form</th>    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>First Name</td> 
+                    <td><input type="text" name="fname" style="width: 98%;"></td>    
+                </tr>
+
+                <tr>
+                    <td>Last Name</td> 
+                    <td><input type="text" name="lname" style="width: 98%" required></td>    
+                </tr>
+
+                <tr>
+                    <td>Username</td> 
+                    <td><input type="text" name="user_name" style="width: 98%;" required></td>    
+                </tr>
+
+                <tr>
+                    <td>Password</td> 
+                    <td><input type="password" name="password" style="width: 98%;" required></td>   
+                </tr>
+
+                <tr>
+                    <td>Track</td>
+                    <td>
+                        <input type="text" name="track" style="width: 98%;">
+                        <select name="department">
+                            <option value="OS">OS</option>
+                            <option value="PD">PD</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                    </td>
+                </tr>
+                   
+                <tr>
+                    <td>
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Favorites</td>
+                    <td>
+                        <input type="checkbox" name="favorites[]" value="football"> Football
+                        <input type="checkbox" name="favorites[]" value="basketball"> Basketball
+                        <input type="checkbox" name="favorites[]" value="games"> Games
+                        <input type="checkbox" name="favorites[]" value="reading"> Reading<br>
+                        <input type="checkbox" name="favorites[]" value="swimming"> Swimming
+                        <input type="checkbox" name="favorites[]" value="travel"> Travel
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Description</td>
+                    <td>
+                        <textarea name="description" style="width: 98%;"></textarea>
+                    </td> 
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td> 
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
